@@ -62,6 +62,13 @@
      });
  });
 
+ app.get('/contact-us', (req, res) => {
+     res.render('contact-us.hbs', {
+         pageTitle: 'contact-us Page',
+         welcomeMessage: 'Contact Us to home page'
+     });
+ });
+
  app.get('/bad', (req, res) => {
      res.send({
          errorMessage: 'unable to handle requset.'
